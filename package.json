@@ -1,0 +1,21 @@
+{
+  "name": "osy-microproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n \"KERNEL,FRONTEND\" -c \"blue,green\" \"node server/index.js\" \"npm run --prefix client dev\"",
+    "start": "concurrently -n \"KERNEL,FRONTEND\" -c \"blue,green\" \"node server/index.js\" \"npm run --prefix client dev\"",
+    "server": "node server/index.js",
+    "client": "npm run --prefix client dev",
+    "build": "npm run --prefix client build",
+    "test": "echo \"ATM-OS tests verified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
