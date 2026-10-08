@@ -6,7 +6,8 @@ node_modules/
 dist/
 client/dist/
 
-# SQLite temporary WAL and SHM files
+# SQLite temporary WAL, SHM, and db files
+*.db
 *.db-wal
 *.db-shm
 
