@@ -1,6 +1,10 @@
 {
   "name": "osy-microproject",
   "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client"
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
